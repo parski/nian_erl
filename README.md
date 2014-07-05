@@ -16,8 +16,8 @@ To compile and run `nian_erl` you need Erlang/OTP. This program has only been te
 The easiest way to compile and run this in your own environment is to start up your trusty `Eshell` and run the following:
 
 ```
-c(nian).
-nian:solve("<INPUT>").
+1> c(nian).
+2> nian:solve("<INPUT>").
 ```
 
 Here is a sample use case:
@@ -29,7 +29,7 @@ Erlang R16B03 (erts-5.10.4) [source] [64-bit] [smp:4:4] [async-threads:10] [hipe
 Eshell V5.10.4  (abort with ^G)
 1> c(nian).
 {ok,nian}
-2> nian:solve("ANITSKSEM").
+2> nian:solve("anitsksem").
 
 103 matches for input "anitsksem" in 85321 microseconds:
 
@@ -52,3 +52,5 @@ Anagrams:
 ok
 3>
 ```
+
+Remember that `svenskaOrd.txt` needs to be in the same directory as `nian.erl`. The file name is hard coded but this implementation should work with English word lists as well although this is untested.
